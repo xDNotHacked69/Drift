@@ -15,10 +15,6 @@ A calm little arcade. Thirteen small games on a slowly drifting, ambient backgro
 
 Orbit Flap, Snake, Breakout, Reaction Time, Number Guesser, Word Guesser, Hangman, Memory Match, Simon, 2048, Lights Out, Tic-Tac-Toe and Breathe.
 
-## Run it
-
-Open `index.html` in any modern browser. There is nothing to install or build.
-
 ## Shortcuts
 
 - Ctrl/Cmd + K: command palette
