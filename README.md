@@ -1,32 +1,110 @@
 # Drift
 
-A calm little arcade. Thirteen small games on a slowly drifting, ambient background, built as a single HTML file with no dependencies.
+**A small place to play.** Twenty-six tiny worlds for a little focus, a little chaos, and a little calm.
+
+Drift is a self-contained browser arcade built with vanilla HTML, CSS, and JavaScript. There is no build step, package manager, account, backend, or installation required.
+
+## Play
+
+1. Download or clone this project.
+2. Open `index.html` in a modern browser (Chrome, Edge, Firefox, or Safari).
+3. Pick a game and drift for a while.
+
+The app is designed to run locally. Game data stays in the browser that you play in.
+
+## The game library
+
+### Reflex
+
+- Orbit Flap
+- Circle Run
+- Drift Dodge
+- Snake
+- Breakout
+- Pong
+- Stack
+- Reaction Time
+- Gravity Flip
+- Pulse
+
+### Brain
+
+- Number Guesser
+- Word Guesser
+- Hangman
+- Memory Match
+- Simon
+- Code Breaker
+- Typing Test
+- Higher or Lower
+
+### Puzzle
+
+- 2048
+- Sliding Puzzle
+- Lights Out
+- Minesweeper
+- Connect 4
+- Tic-Tac-Toe
+
+### Zen
+
+- Breathe
+- Ripples
 
 ## Features
 
-- Ambient background that cross-fades between colours, with film grain and optional floating dust
-- 7 themes plus Auto, which follows your time of day, and a custom accent colour
-- Local accounts: just a name and a colour, with no email and no password
-- Profile with time played, sessions, wins, per-game stats, best scores, day streak and an activity heatmap
-- Command palette (Ctrl/Cmd + K), wallpaper mode (P) and an optional soft cursor
-- Settings for card style, typeface, drift speed, grain, sound and clock format
+- **One consistent game experience:** shared pause, restart, home, controls, theme colours, and sound behaviour.
+- **Personalisation:** seven themes plus Auto, accent colour, glass/flat/outlined cards, and font choices.
+- **Atmosphere controls:** background speed, grain, blur, floating particles, soft cursor, and reduced motion.
+- **Daily play:** seeded reflex challenges and a daily Word Guesser.
+- **Coder touches:** command palette, optional Vim-style movement keys, activity heatmap, focus/break timer, and personal-best scoreboard.
+- **Shareable scores:** create a score card image from a finished run.
+- **Local-first saves:** settings, scores, streaks, and daily progress are stored in `localStorage`.
+- **Backup tools:** export and import your local data as JSON.
+- **Responsive layout:** usable on desktop and mobile-sized screens.
+- **No third-party runtime dependencies:** the app is a single HTML file and works offline.
 
-## Games
+## Keyboard shortcuts
 
-Orbit Flap, Snake, Breakout, Reaction Time, Number Guesser, Word Guesser, Hangman, Memory Match, Simon, 2048, Lights Out, Tic-Tac-Toe and Breathe.
+| Shortcut | Action |
+| --- | --- |
+| `Ctrl` / `Cmd` + `K` | Open the command palette |
+| `P` | Toggle wallpaper mode |
+| `Esc` | Close the current game or panel |
+| `H` `J` `K` `L` | Optional Vim-style movement (enable in Settings) |
 
-## Shortcuts
+Individual games may also offer their own keyboard or pointer/touch controls. The in-game controls are the source of truth for each game.
 
-- Ctrl/Cmd + K: command palette
-- P: wallpaper mode
-- Esc: close or go back
-- Snake and 2048 also accept WASD and hjkl
+## Privacy and saved data
 
-## Notes
+Drift does not send game activity to a server. Settings, scores, streaks, and daily progress are stored in the browser's local storage on the device where you play. This data does not automatically sync between browsers or devices.
 
-- Accounts, settings and scores are saved in your browser's local storage, so they stay on your device and do not sync between browsers.
-- Fonts (Inter and JetBrains Mono) load from Google Fonts, with system fonts as a fallback when offline.
+Use **Settings → Export JSON** to make a backup before clearing browser data or switching devices. Import only backup files you trust. **Reset local data** clears the Drift data stored in the current browser.
 
-## Built with
+## Project structure
 
-HTML, CSS and vanilla JavaScript. Canvas for the background and some games, and the Web Audio API for sounds.
+```text
+Drift/
+├── .github/
+│   └── workflows/
+│       └── pages.yml
+├── index.html   # Complete app: markup, styles, and game logic
+└── README.md    # Project documentation
+```
+
+## Customising the project
+
+The UI, styles, game library, and game logic live in `index.html`. Open it in a code editor and search for the relevant section or game name. Because this is a no-build project, save the file and refresh the browser to see changes.
+
+## Deploying with GitHub Pages
+
+This repository includes a GitHub Actions workflow that publishes the site whenever a commit is pushed to `main`. In the repository, open **Settings → Pages** and make sure the build and deployment source is set to **GitHub Actions**. The first workflow run may take a minute or two; see the **Actions** tab for its status.
+
+## Compatibility
+
+Use a recent version of Chrome, Edge, Firefox, or Safari. Some browser features (such as vibration, system sharing, or local storage) depend on device and browser support; Drift keeps them optional and provides fallbacks where possible.
+
+---
+
+Made for the in-between. **Enjoy the drift.**
