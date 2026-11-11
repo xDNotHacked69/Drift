@@ -2,6 +2,8 @@
 
 **A small place to play.** Twenty-six tiny worlds for a little focus, a little chaos, and a little calm.
 
+**Live demo:** [xdnothacked69.github.io/Drift](https://xdnothacked69.github.io/Drift/)
+
 Drift is a self-contained browser arcade built with vanilla HTML, CSS, and JavaScript. There is no build step, package manager, account, backend, or installation required.
 
 ## Play
@@ -99,7 +101,7 @@ The UI, styles, game library, and game logic live in `index.html`. Open it in a 
 
 ## Deploying with GitHub Pages
 
-This repository includes a GitHub Actions workflow that publishes the site whenever a commit is pushed to `main`. In the repository, open **Settings → Pages** and make sure the build and deployment source is set to **GitHub Actions**. The first workflow run may take a minute or two; see the **Actions** tab for its status.
+This repository includes a GitHub Actions workflow that publishes the site whenever a commit is pushed to `main`. The deployment is handled through GitHub Pages; check the **Actions** tab for the latest build and deployment status.
 
 ## Compatibility
 
